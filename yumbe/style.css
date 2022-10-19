@@ -1,0 +1,596 @@
+@keyframes blink {
+    0%{
+        background-color: rgb(49, 219, 219);
+    }
+    20%{
+        background-color: rgb(136, 255, 0);
+    }
+    40%{
+        background-color: rgb(255, 30, 0);
+    }
+    60%{
+        background-color: rgb(38, 0, 255);
+    }
+    80%{
+        background-color: rgb(251, 255, 0);
+    }
+    100%{
+        background-color: rgb(255, 102, 0);
+    }
+}
+/* mobile phones  */
+@media (max-width:480px) {
+        body{background-color: white;}
+        header{background-color: rgb(51, 51, 153);
+        height: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    } 
+        header .showbtn {
+            float: right;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        } 
+        header .menu {
+            background-color: rgb(94, 84, 2);
+            height: 100vh;
+            position: fixed;
+            width: 100%;
+            list-style: none;
+            line-height: normal;
+            top: -150%;
+            right: -100%;
+            padding: 90px 0;
+            transition: 0.5s;
+        }  
+        .menu a {
+            display: block;
+            text-align: center;
+            line-height: 2px;
+            padding:20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            /* font-weight:bold; */
+            font-family: algerian;
+        } 
+        .menu .hidebtn {
+            float: right;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        #chk:checked ~ .menu {
+            right: 0;
+            top: 0;
+        }
+        center {
+        background-image: url(1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-color: rgb(26, 42, 59);
+        background-blend-mode: darken;
+        height: 260px;
+        }
+        center h1 {
+            color: white;
+            text-transform: capitalize;
+            padding-top: 50px;
+        }
+        center .phone {
+            color: white;
+            padding-top: 35px;
+            width: 95%;
+        }
+        center .pc{
+            display: none;
+        }
+        .products{
+            text-align: center;
+        }
+        .products h2{
+            padding-top: 30px;
+            text-transform: capitalize;
+            width: 95%;
+            margin: auto;
+            font-family: algerian;
+        }
+        .bottom , .top , .shoe {
+            display:block;
+            padding: 35px 31px;
+            
+        }
+        .products img{
+            text-align: center;
+            border-radius: 10px;
+        }
+        .products h3 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 10px;
+            border: 1px solid black;
+            cursor: pointer;
+            transition: 1s;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50px;
+            width: 40%;
+        }
+        .products h3:hover {
+           color: white;
+           background-color: black;
+        }
+        .sign {
+            background-color: black;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        .sign h2 {
+            text-align: center;
+            text-transform: capitalize;
+            padding-bottom: 20px;
+            color: white;
+        }
+        .sign div {
+            padding: 1px 0;
+        }
+        .sign label {
+            display: block;
+            padding: 5px 0;
+            color: white;
+            text-transform: capitalize;
+        }
+        form .sub {
+            padding-top: 20px;
+            
+        }
+        footer {
+            background-color: blue;
+            text-align: right;
+            color: white;
+            padding-bottom: 10px;
+        }
+}
+
+
+/* landiscape and tablets */
+@media (min-width: 481px) and (max-width:767px) {
+       
+    body{background-color: white;}
+    header{background-color: rgb(25, 70, 35);
+    height: 60px;
+    position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    } 
+    header .showbtn {
+        float: right;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    
+    header .menu {
+        background-color: rgb(94, 84, 2);
+        height: 100vh;
+        position: fixed;
+        width: 100%;
+        list-style: none;
+        line-height: normal;
+        top: 0;
+        right: -100%;
+        padding: 90px 0;
+        transition: 0.5s;
+    }  
+    .menu a {
+        display: block;
+        text-align: center;
+        line-height: 2px;
+        padding:20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        /* font-weight:bold; */
+        font-family: algerian;
+    } 
+    .menu .hidebtn {
+        float: right;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    #chk:checked ~ .menu {
+        right: 0;
+        
+    }
+    center {
+        background-image: url(1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-color: rgb(26, 42, 59);
+        background-blend-mode: darken;
+        height: 320px;
+        }
+        center h1 {
+            color: white;
+            text-transform: capitalize;
+            padding-top: 85px;
+        }
+        center .phone {
+            display: none;
+        }
+        center .pc{
+            color: white;
+            padding-top: 40px;
+            width: 95%;
+        }
+        .products{
+            text-align: center;
+        }
+        .products h2{
+            padding-top: 30px;
+            text-transform: capitalize;
+            width: 95%;
+            margin: auto;
+            font-family: algerian;
+        }
+        .bottom , .top , .shoe {
+            display:block;
+            padding: 35px 31px;
+            
+        }
+        .products img{
+            text-align: center;
+            border-radius: 10px;
+        }
+        .products h3 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 10px;
+            border: 1px solid black;
+            cursor: pointer;
+            transition: 1s;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50px;
+            width: 25%;
+        }
+        .products h3:hover {
+           color: white;
+           background-color: black;
+        }
+        .sign {
+            background-color: black;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .sign h2 {
+            text-align: center;
+            text-transform: capitalize;
+            padding-bottom: 20px;
+            color: white;
+        }
+        .sign div {
+            padding: 1px 0;
+        }
+        .sign label {
+            display: block;
+            padding: 5px 0;
+            color: white;
+            text-transform: capitalize;
+        }
+        form .sub {
+            padding-top: 20px;
+            
+        }
+        footer {
+            background-color: blue;
+            text-align: right;
+            color: white;
+            padding-bottom: 10px;
+        }
+        
+}
+
+*{ margin: 0;
+padding: 0;}
+.logo {float: left;
+line-height: 60px;
+color: gold;
+text-transform: uppercase;
+padding: 0 20px;}
+.kantu {
+    visibility: hidden;
+    position: fixed;
+    z-index: -1111;
+}
+main {
+    margin-top: 60px;
+}
+.products {
+    animation: blink 15s infinite;
+}
+
+
+/* tablets and laptops */
+
+@media (min-width: 768px) and (max-width:1279px) {
+    .showbtn , .hidebtn {
+        display: none;
+    }
+    header {
+        background-color: black;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    header .menu {
+        line-height: 60px;
+        list-style-type: none;
+        padding: 0 20px;
+        text-align: center;
+        
+    }
+    .menu a  {
+        text-align: center;
+        text-decoration: none;
+        /* yumbe */
+        padding: 0 20px;
+        color: white;
+        text-transform: capitalize;
+        font-family: colonna mt;
+    }
+    .menu .demo {
+        float: right;
+        /* padding-right: 10px; */
+    }
+    .demo a {
+        border: 1px solid white;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin-left: 5px;
+        border-radius: 10px;
+        
+    }
+    .demo a:hover{
+        background-color: white;
+        color: black;
+    }
+    center {
+        background-image: url(1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-color: rgb(26, 42, 59);
+        background-blend-mode: darken;
+        height: 350px;
+        
+        }
+        center h1 {
+            color: rgb(25, 255, 4);
+            text-transform: uppercase;
+            padding-top: 85px;
+            font-family: algerian;
+            font-size: 40px;
+        }
+        center .phone {
+            display: none;
+        }
+        center .pc{
+            color: white;
+            padding-top: 40px;
+            width: 95%;
+        }
+        .products{
+            text-align: center;
+            padding-bottom: 50px;
+            padding-top: 30px;
+        }
+        .products h2{
+            padding-top: 30px;
+            text-transform: capitalize;
+            width: 95%;
+            margin: auto;
+            font-family: algerian;
+        }
+        .bottom , .top , .shoe {
+            display:inline-block;
+            padding: 20px 29px;
+            
+        }
+        .products img{
+            display: inline-block;
+            border-radius: 10px;
+        }
+        .products h3 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 10px;
+            border: 1px solid black;
+            cursor: pointer;
+            transition: 1s;
+            border-radius: 50px;
+        }
+        .products h3:hover {
+           color: white;
+           background-color: black;
+        }
+        .sign {
+            background-color: black;
+            padding-top: 20px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        .sign h2 {
+            text-align: center;
+            text-transform: capitalize;
+            padding-bottom: 20px;
+            color: white;
+        }
+        .sign div {
+            padding: 1px 0;
+        }
+        .sign label {
+            display: block;
+            padding: 5px 0;
+            color: white;
+            text-transform: capitalize;
+        }
+        form .sub {
+            padding-top: 20px;
+            
+        }
+        footer {
+            background-color: blue;
+            text-align: right;
+            color: white;
+            padding-bottom: 10px;
+        }
+}
+ 
+/* large screens */
+/* yumbe */
+
+@media (min-width: 1280px) {
+
+    .showbtn , .hidebtn {
+        display: none;
+    }
+    header {
+        background-color: black;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    header .menu {
+        line-height: 60px;
+        list-style-type: none;
+        padding: 0 20px;
+        text-align: center;
+        
+    }
+    .menu a  {
+        text-align: center;
+        text-decoration: none;
+        padding: 0 40px;
+        color: white;
+        text-transform: capitalize;
+        font-family: algerian;
+    }
+    .menu .demo {
+        float: right;
+        /* padding-right: 10px; */
+    }
+    .demo a {
+        border: 1px solid white;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin-left: 5px;
+        border-radius: 10px;
+        
+    }
+    .demo a:hover{
+        background-color: white;
+        color: black;
+    }
+    center {
+        background-image: url(1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-color: rgb(26, 42, 59);
+        background-blend-mode: darken;
+        height: 450px;
+        
+        }
+        center h1 {
+            color: rgb(4, 217, 255);
+            text-transform: uppercase;
+            padding-top: 115px;
+            font-family: algerian;
+            font-size: 60px;
+        }
+        center .phone {
+            display: none;
+        }
+        center .pc{
+            color: white;
+            padding-top: 60px;
+            width: 95%;
+            font-size: 20px;
+        }
+        .products{
+            text-align: center;
+            padding-bottom: 50px;
+            padding-top: 30px;
+        }
+        .products h2{
+            padding-top: 30px;
+            text-transform: capitalize;
+            width: 95%;
+            margin: auto;
+            font-family: algerian;
+        }
+        .bottom , .top , .shoe {
+            display:inline-block;
+            padding: 40px 5%;
+            
+        }
+        .products img{
+            display: inline-block;
+            border-radius: 10px;
+        }
+        .products h3 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 15px;
+            border: 1px solid black;
+            cursor: pointer;
+            transition: 1s;
+            border-radius: 50px;
+        }
+        .products h3:hover {
+           color: white;
+           background-color: black;
+        }
+        .sign {
+            background-color: black;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        .sign h2 {
+            text-align: center;
+            text-transform: capitalize;
+            padding-bottom: 20px;
+            color: white;
+        }
+        .sign div {
+            padding: 1px 0;
+        }
+        .sign label {
+            display: block;
+            padding: 5px 0;
+            color: white;
+            text-transform: capitalize;
+        }
+        form .sub {
+            padding-top: 20px;
+            
+        }
+        footer {
+            background-color: blue;
+            text-align: right;
+            color: white;
+            padding-bottom: 10px;
+        }
+}
